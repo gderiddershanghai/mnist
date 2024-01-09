@@ -8,6 +8,62 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 0.5);
+            background-blend-mode: overlay;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        canvas {
+            border: 8px solid;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Handwriting Classifier!</h1>
+        <canvas id="canvas" width="280" height="280"></canvas>
+        <img id="canvasimg" style="width:280px;height:280px;display:none;">
+        <br>
+        <input type="button" value="classify" id="sb">
+        <input type="button" value="clear" id="cb">
+    </div>
+    <script src="data.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
+
+
+
+<!--
+
+
+
+
+
+
+
+
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+    <style>
+        body {
+            background-image: url('background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             background-color: rgba(255, 255, 255, 0.5); /* Assuming you want a white background color */
             background-blend-mode: overlay;
         }
@@ -29,4 +85,4 @@
     <script src="data.js" type="module"></script>
     <script src="script.js" type="module"></script>
 </body>
-</html>
+</html> -->
